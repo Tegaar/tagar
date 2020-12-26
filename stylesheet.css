@@ -1,0 +1,510 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: Baloo;
+	display: grid;
+	place-items: center;
+	background: #000;
+
+}
+.banner-text{
+	width: 100%;
+	position: absolute;
+}
+.banner-text ul{
+	height: 50px;
+	text-align: center;
+}
+.banner-text ul li{
+	display: inline-block;
+	padding: 40px 15px;
+	text-transform: uppercase;
+	color: rgb(28, 223, 181);
+	font-size: 20px;
+	opacity: 0%;
+}
+.banner-text h2{
+	text-align: center;
+	color: rgb(255, 255, 255);
+	font-size: 50px;
+	margin-top: 20%;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.animation-area {
+	/*background:linear-gradient(to left, #6f5dd4, #505050) ;*/
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(BG.jpg);
+	background-position:center;
+	background-size:cover;
+	width: 100%;
+	height: 100vh;
+} 
+.box-area{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:100%;
+	height: 100%;
+	overflow: hidden;
+}
+.box-area li{
+	position: absolute;
+	display: block;
+	list-style: none;
+	width: 25px;
+	height:25px;
+	background: rgba(255,255,255,0.2);
+	animation: animate 20s linear infinite;
+	bottom: -150px;
+}
+.box-area li:nth-child(1){
+	left: 86%;
+	width: 80px;
+	height:80px;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(2){
+	left: 12%;
+	width: 30px;
+	height:30px;
+	animation-delay: 1.5s;
+	animation-duration: 10s;
+}
+.box-area li:nth-child(3){
+	left: 70%;
+	width: 100px;
+	height:100px;
+	animation-delay: 5.5s;
+}
+.box-area li:nth-child(4){
+	left: 42%;
+	width: 150px;
+	height:150px;
+	animation-delay: 0s;
+	animation-duration: 15s;
+}
+.box-area li:nth-child(5){
+	left: 65%;
+	width: 40px;
+	height:100px;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(6){
+	left: 15%;
+	width: 110px;
+	height:110px;
+	animation-delay: 3.5s;
+}
+@keyframes animate{
+	0%{
+		transform: translateY(0) rotate(0deg);
+		opacity: 1;
+	}
+	100%{
+		transform: translateY(-800px) rotate(360deg);
+		opacity: 0;
+	}
+}
+
+/*-----------------------------------------------waktu ini nro--------------------------------------------------*/
+.times{
+	position: absolute;
+	position: center;
+	top: -45%;
+	left: 20%;
+	color: #1b1b1b;
+	font-family: fantasy;
+}
+.wrapper{
+	height: 100px;
+	width: 360px;
+	cursor: default;
+	background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+	border-radius: 10px;
+	animation: animasi 1.5s linear infinite;
+	position: absolute;
+	top: 84%;
+	left:37%;
+	opacity: 50%;
+}
+.wrapper .display,
+.wrapper span{
+	position:absolute;
+	top: 20%; /*50*/
+	left: 50%;
+	transform: translate(-50%, -50%)
+
+}
+.wrapper .display{
+	position:absolute;
+	/*opacity: 0;*/
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 999;
+	background: #1b1b1b;
+	height: 85px;
+	width: 345px;
+	border-radius: 6px;
+	text-align: center;
+}
+.wrapper .display #time{
+	line-height: 85px;
+	font-size: 50px;
+	font-weight: 600px;
+	letter-spacing: 1px;
+	background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animasi 1.5s linear infinite;
+}
+@keyframes animasi {
+	100%{
+		filter: hue-rotate(360deg);
+	}
+}
+.wrapper span{
+	height: 100%;
+	width: 100%;
+	background: inherit;
+	border-radius: 10px;
+}
+.wrapper span:first-child{
+	filter: blur(10px);
+}
+.wrapper span:last-child{
+	filter: blur(40px);
+}
+
+/*--------------------------------------------iconnya sosmed gan------------------------------------------------*/
+
+.ICON {
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+	align-items: center;
+
+	list-style: none;
+	position: absolute;
+	margin-top: -20%;
+	margin-left: 32%;
+}
+.ICON a{
+	text-align: center;
+	position: relative;
+	display: block;
+	color: #666;
+	font-size: 30px;
+	height: 60px;
+	width: 60px;
+	/*background: #171515;(background dibelakang icon*/
+	line-height: 60px;
+	border-radius: 50%;
+	margin: 0 15px;
+	cursor: pointer;
+	transition: .5s;
+}
+.ICON a:before{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	/*background: cyan;(Nonaktif=karena icon 1 1 )*/
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	z-index: -1;
+	transform: scale(0.9);
+	transition: .5s;
+}
+
+.ICON a:nth-child(1):before{/*Pengganti icon 1 1)*/
+	background: #4267B2;
+}
+.ICON a:nth-child(2):before{/*Pengganti icon 1 1)*/
+	background: #1DA1F2;
+}
+.ICON a:nth-child(3):before{/*Pengganti icon 1 1)*/
+	background: #E1306C;
+}
+.ICON a:nth-child(4):before{/*Pengganti icon 1 1)*/
+	background: #2867B2;
+}
+.ICON a:nth-child(5):before{/*Pengganti icon 1 1)*/
+	background: #ff0000;
+}
+
+.ICON a:hover:before{
+	filter: blur(3px);
+	transform: scale(1.2);
+	/*box-shadow: 0 0 15px cyan;(Nonaktif=karena icon 1 1)*/
+}
+
+.ICON a:nth-child(1):hover:before{/*(Pengganti icon 1 1)*/
+	box-shadow: 0 0 15px #4267B2;
+}
+.ICON a:nth-child(2):hover:before{/*(Pengganti icon 1 1)*/
+	box-shadow: 0 0 15px #1DA1F2;
+}
+.ICON a:nth-child(3):hover:before{/*(Pengganti icon 1 1)*/
+	box-shadow: 0 0 15px #E1306C;
+}
+.ICON a:nth-child(4):hover:before{/*(Pengganti icon 1 1)*/
+	box-shadow: 0 0 15px #2867B2;
+}
+.ICON a:nth-child(5):hover:before{/*(Pengganti icon 1 1)*/
+	box-shadow: 0 0 15px #ff0000;
+}
+
+/*(Nonaktif=karena icon 1 1)
+.ICON li:hover{/*kalo ini icon yg didalem bre, sama kasih shadow/blur buat icon bisa di daerah luar maupun dalem bulatan bre
+	color: red;
+	/*box-shadow: 0 0 0 15px cyan;/*(bentrok bre warnanya)
+	text-shadow: 0 0 15px #ff00e0;
+}*/
+
+.ICON a:nth-child(1):hover{/*(Pengganti icon 1 1)*/
+	color:#456cba;
+	box-shadow: 0 0 15px #4267B2;
+	text-shadow: 0 0 15px #4267B2;
+}
+.ICON a:nth-child(2):hover{/*(Pengganti icon 1 1)*/
+	color:#26a4f2;
+	box-shadow: 0 0 15px #1DA1F2;
+	text-shadow: 0 0 15px #1DA1F2;
+}
+.ICON a:nth-child(3):hover{/*(Pengganti icon 1 1)*/
+	color:#e23670;
+	box-shadow: 0 0 15px #E1306C;
+	text-shadow: 0 0 15px #E1306C;
+}
+.ICON a:nth-child(4):hover{/*(Pengganti icon 1 1)*/
+	color:#2a6cbb;
+	box-shadow: 0 0 15px #2867B2;
+	text-shadow: 0 0 15px #2867B2;
+}
+.ICON a:nth-child(5):hover{/*(Pengganti icon 1 1)*/
+	color:#ff1a1a;
+	box-shadow: 0 0 15px #ff0000;
+	text-shadow: 0 0 15px #ff0000;
+}
+
+/*------------------Button ini bang----------------*/
+
+.button a{
+	font-family: sans-serif;
+	position: absolute;
+	/*top: 760px;
+	left: 200px;*/
+	margin-top: -4%;
+	margin-left: -40%;
+	transform: translate(-50%, -50%);
+	color: #1670f0;
+	padding: 30px 60px;
+	font-size: 30px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-decoration: none;
+	box-shadow: 0 20px 50px rgba(0,0,0,.5);
+	overflow: hidden;
+	/*background: #0c002b;*/
+}
+.button a:before{
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	bottom: 2px;
+	width:50%;
+	/*background:rgba(255,255,255,0.05);*/
+}
+
+.button span:nth-child(1){
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(to right, #0c002b, #1779ff);
+	animation: animate1 2s linear infinite;
+}
+@keyframes animate1{
+	0%{
+		transform: translateX(-100%);
+	}
+	100%{
+		transform: translateX(100%);
+	}
+
+}
+.button span:nth-child(2){
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(to bottom, #0c002b, #1779ff);
+	animation: animate2 2s linear infinite;
+	animation-delay: 1s;
+}
+@keyframes animate2{
+	0%{
+		transform: translateY(-100%);
+	}
+	100%{
+		transform: translateY(100%);
+	}
+}
+
+.button span:nth-child(3){
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(to left, #0c002b, #1779ff);
+	animation: animate3 2s linear infinite;
+}
+@keyframes animate3{
+	0%{
+		transform: translateX(100%);
+	}
+	100%{
+		transform: translateX(-100%);
+	}
+}
+
+.button span:nth-child(4) {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(to top, #0c002b, #1779ff);
+	animation: animate4 2s linear infinite;
+	animation-delay: 1s;
+}
+
+@keyframes animate4{
+	0%{
+		transform: translateY(100%);
+	}
+	100%{
+		transform: translateY(-100%);
+	}
+}
+
+
+/*kanan*/
+
+.button1 a{
+	font-family: sans-serif;
+	position: absolute;
+	/*top: 760px;
+	left: 200px;*/
+	margin-top: -4%;
+	margin-left: 40%;
+	transform: translate(-50%, -50%);
+	color: #1670f0;
+	padding: 30px 60px;
+	font-size: 30px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-decoration: none;
+	box-shadow: 0 20px 50px rgba(0,0,0,.5);
+	overflow: hidden;
+	/*background: #0c002b;*/
+}
+.button1 a:before{
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	bottom: 2px;
+	width:50%;
+	/*background:rgba(255,255,255,0.05);*/
+}
+
+.button1 span:nth-child(1){
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(to right, #0c002b, #1779ff);
+	animation: animate1 2s linear infinite;
+}
+@keyframes animate1{
+	0%{
+		transform: translateX(-100%);
+	}
+	100%{
+		transform: translateX(100%);
+	}
+
+}
+.button1 span:nth-child(2){
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(to bottom, #0c002b, #1779ff);
+	animation: animate2 2s linear infinite;
+	animation-delay: 1s;
+}
+@keyframes animate2{
+	0%{
+		transform: translateY(-100%);
+	}
+	100%{
+		transform: translateY(100%);
+	}
+}
+
+.button1 span:nth-child(3){
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(to left, #0c002b, #1779ff);
+	animation: animate3 2s linear infinite;
+}
+@keyframes animate3{
+	0%{
+		transform: translateX(100%);
+	}
+	100%{
+		transform: translateX(-100%);
+	}
+}
+
+.button1 span:nth-child(4) {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(to top, #0c002b, #1779ff);
+	animation: animate4 2s linear infinite;
+	animation-delay: 1s;
+}
+
+@keyframes animate4{
+	0%{
+		transform: translateY(100%);
+	}
+	100%{
+		transform: translateY(-100%);
+	}
+}
+
+
+
+
+
+
+

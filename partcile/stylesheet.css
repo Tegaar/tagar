@@ -1,0 +1,21 @@
+body{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+}
+#particles-js{
+	height:100%;
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(BG.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.nama{
+	color: azure;
+	text-align: center;
+	font-size: 23px;
+	top:40%;
+	left:31%;
+	position: fixed;
+	border-bottom: blanchedalmond ,100px;
+	font-family: 'Times New Roman', Times, serif;
+}

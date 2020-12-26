@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Tegar Ardiyansyah</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicon/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicon/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicon/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="favicon/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicon/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="favicon/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicon/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="favicon/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="favicon/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="favicon/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="favicon/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="favicon/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="favicon/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="favicon/mstile-310x310.png" />
+
+
+</head>
+
+<body>
+	<div class="banner-text">
+		<ul>
+			<li>Home</li>
+			<li>About</li>
+			<li>Portofolio</li>
+			<li>Services</li>
+			<li>Contact</li>
+		</ul>
+		<h2>Halo Semua Saya Tegar Ardiyansyah</h2>
+	</div>
+
+	<div class="animation-area">
+		<ul class="box-area">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+
+	<div class="wrapper">
+		<div class="display">
+			<div id="time">TIME</div>
+			<h1 class="times">INI WAKTU BRO</h1>
+		</div>
+		<span></span>
+		<span></span>
+	</div>
+
+	<script>
+		setInterval(() => {
+			const time = document.querySelector("#time");
+			let date = new Date();
+			let hours = date.getHours();
+			let minutes = date.getMinutes();
+			let seconds = date.getSeconds();
+			let day_night = "AM";
+			if (hours > 12) {
+				day_night = "PM";
+				//hours = hours -12;
+			}
+			if (hours < 10) {
+				hours = "0" + hours;
+			}
+			if (minutes < 10) {
+				minutes = "0" + minutes;
+			}
+			if (seconds < 10) {
+				seconds = "0" + seconds;
+			}
+			time.textContent = hours + ":" + minutes + ":" + seconds + " " + day_night;
+		});
+	</script>
+
+	<!--icon bang-->
+	<ul class="ICON">
+		<a href="https://www.facebook.com/>"><li><i class="fab fa-facebook-f"></i></li></a> <!--si asu kalo a nya ditaruh depan li warnanya jadi kek gitu-->
+		<a href="https://www.instagram.com/>"><li><i class="fab fa-twitter"></i></li></a>
+		<a href="https://www.instagram.com/>"><li><i class="fab fa-instagram"></i></li></a>
+		<a href="https://www.instagram.com/>"><li><i class="fab fa-linkedin-in"></i></li></a>
+		<a href="https://www.instagram.com/>"><li><i class="fab fa-youtube"></i></li></a>
+	</ul>
+
+	<!-- button dibawah kiri ama kanan bang-->
+
+<div class="button">
+	<a href="Simple Nama - Copy -2/index.html" onclick="alert('Hello Bre')">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		Desktop
+	</a>
+</div>
+<div class="button1">
+	<a href="partcile/index.html" onclick="alert('Hello Bre')" >
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		desktop
+	</a>
+</div>
+
+
+
+</body>
+
+</html>
