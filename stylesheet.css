@@ -113,9 +113,10 @@ body{
 	position: absolute;
 	position: center;
 	top: -45%;
-	left: 20%;
+	left: 15%;
 	color: #1b1b1b;
 	font-family: fantasy;
+	font-style: bold;
 }
 .wrapper{
 	height: 100px;
