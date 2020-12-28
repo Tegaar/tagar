@@ -503,7 +503,12 @@ body{
 	}
 }
 
-
+@media screen and (min-width: 992px) {
+	.banner-text h2{
+		font-size: 50px;
+		margin-top: 15%;
+	}
+}
 
 
 
