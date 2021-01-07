@@ -450,13 +450,26 @@ img{
     .contact__container{
         justify-items: center;
     }
-
-
+    
+    
     /*modeee*/
     .gonta-ganti{
         margin-top: var(--mb-1);
-        
+        position: absolute;
+        top: 40%;
+        left: 2.5%;
     }
+}
+
+@media screen and (min-width: 1024px){
+    .bd-grid{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .home__img{
+        right: 10%;
+    }
+    
 }
 
 /*Modeee*/
@@ -475,9 +488,6 @@ img{
     transition: all 500ms ease-in-out;
 }
 .gonta-ganti{
-    position: absolute;
-    top: 40%;
-    left: 2.5%;
     display: flex;
     /*justify-content: flex-end;*/
     align-items: center;
@@ -529,14 +539,3 @@ img{
 
 
 
-
-@media screen and (min-width: 1024px){
-    .bd-grid{
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .home__img{
-        right: 10%;
-    }
-    
-}
