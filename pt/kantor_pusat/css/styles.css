@@ -457,8 +457,18 @@ img{
         margin-top: var(--mb-1);
         position: absolute;
         top: 40%;
-        left: 2.5%;
+        left: 22%;
     }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1025px){
+    .gonta-ganti{
+        margin-top: var(--mb-1);
+        position: absolute;
+        top: 400%;
+        left: 2000%;
+    }
+
 }
 
 @media screen and (min-width: 1024px){
@@ -470,6 +480,12 @@ img{
         right: 10%;
     }
     
+    .gonta-ganti{
+        margin-top: var(--mb-1);
+        position: absolute;
+        top: 40%;
+        left: 2.5%;
+    }
 }
 
 /*Modeee*/
