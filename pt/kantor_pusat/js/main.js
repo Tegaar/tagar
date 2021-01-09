@@ -61,6 +61,10 @@ sr.reveal('.contact__input',{interval: 200})
 
 
 /*darkmodeee*/
+if(localStorage.getItem('theme') == 'dark')
+    darkModeon(true)
+
+
 const gantiWarna = document.getElementById('ganti-tema');
 gantiWarna.addEventListener("click",checkMode);
 
@@ -78,9 +82,11 @@ function checkMode(){
 
 function darkModeon(){
     document.body.classList.add('dark-mode');
+    localStorage.setItem('theme', 'dark')
 }
 function darkModeoff(){
     document.body.classList.remove('dark-mode');
+    localStorage.removeItem('theme')
 }
 
 /*let darkModeon{
