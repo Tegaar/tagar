@@ -37,7 +37,10 @@ body {
 	font-size: 50px;
 	margin-top: 50%;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	
+	
 }
+
 
 .animation-area {
 	/*background:linear-gradient(to left, #6f5dd4, #505050) ;*/
@@ -133,6 +136,7 @@ body {
 	color: #1b1b1b;
 	font-family: fantasy;
 	font-style: bold;
+	opacity: 0%;
 }
 
 .wrapper {
@@ -143,9 +147,10 @@ body {
 	border-radius: 10px;
 	animation: animasi 1.5s linear infinite;
 	position: absolute;
-	top: 91%;
+	top: -1%;/*91%*//*81*/
 	left: 32%;
 	opacity: 80%;
+	
 }
 
 .wrapper .display,
@@ -352,12 +357,12 @@ body {
 	position: absolute;
 	/*top: 760px;
 	left: 200px;*/
-	margin-top: -24%;
-	margin-left: -35%;
+	margin-top: -10%;/*-24%*/
+	margin-left: -25%;/*-35%*/
 	transform: translate(-50%, -50%);
 	color: #1670f0;
-	padding: 30px 60px;
-	font-size: 30px;
+	padding: 40px 80px;/*padding: 30px 60px;*/
+	font-size: 40px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -467,18 +472,19 @@ body {
 	position: absolute;
 	/*top: 760px;
 	left: 200px;*/
-	margin-top: -24%;
-	margin-left: 35%;
+	margin-top: -10%;/*-24%*/
+	margin-left: 25%;/*35%*/
 	transform: translate(-50%, -50%);
 	color: #1670f0;
-	padding: 30px 60px;
-	font-size: 30px;
+	padding: 40px 80px;/*30px 60px*/
+	font-size: 40px;/*30px*/
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	text-decoration: none;
 	box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
 	overflow: hidden;
 	/*background: #0c002b;*/
+	
 }
 
 .button1 a:before {
@@ -489,6 +495,7 @@ body {
 	bottom: 2px;
 	width: 50%;
 	/*background:rgba(255,255,255,0.05);*/
+	
 }
 
 .button1 span:nth-child(1) {
@@ -605,6 +612,7 @@ body {
 		left: 20%;
 		color: #1b1b1b;
 		font-family: fantasy;
+		opacity: 100%;
 	}
 
 	.wrapper {
@@ -617,7 +625,12 @@ body {
 		position: absolute;
 		top: 100%;
 		left: 38%;
+		opacity: 80%;
 	}
+
+
+
+
 
 	.ICON {
 		margin-top: -21%;
@@ -655,12 +668,20 @@ body {
 	}
 
 	.button a {
+		margin-top: -24%;
+		margin-left: -35%;
 		top: 1026px;
+		padding: 30px 60px;
+		font-size: 30px;
 		/*1050*/
 	}
 
 	.button1 a {
+		margin-top: -24%;
+		margin-left: 35%;
 		top: 1026px;
+		padding: 30px 60px;
+		font-size: 30px;
 		/*1050*/
 	}
 }
