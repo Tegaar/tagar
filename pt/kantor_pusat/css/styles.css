@@ -291,7 +291,7 @@ img{
 .skills__names{
     display: flex;
     align-items:center;
-    color: var(--first-color);
+    color: var(--second-color);
 }
 .skills__bar{
     position: absolute;
