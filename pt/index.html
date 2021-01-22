@@ -34,6 +34,20 @@
 <meta name="msapplication-square310x310logo" content="favicon/mstile-310x310.png" />
     </head>
     <body>
+        <!--======PAGE LOADER=====-->
+        <div class="loader_bg">
+            <div class="loader">
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+        </script>
+        <script>
+            setTimeout(function(){
+                $('.loader_bg').fadeToggle();
+            }, 1500);
+        </script>
+
+
 
         <!-- =======HEADER======= -->
         <header class="header-1">
