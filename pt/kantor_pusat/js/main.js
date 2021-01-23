@@ -38,9 +38,9 @@ const sr = ScrollReveal({
 
 /*SCROLL HOME*/
 sr.reveal('.home__title',{})
-sr.reveal('.button',{origin:'left', delay: 1900})/* 400 */
-sr.reveal('.home__img',{origin:'right', delay: 1900})/* 400 */
-sr.reveal('.home__social-icon',{origin:'bottom',interval: 1900})/* 400 */
+sr.reveal('.button',{origin:'left', delay: 1100})/* 400 */
+sr.reveal('.home__img',{origin:'right', delay: 1100})/* 400 */
+sr.reveal('.home__social-icon',{origin:'bottom',interval: 1100})/* 400 */
 
 /*SCROLL ABOUT*/
 sr.reveal('.about__img',{})
