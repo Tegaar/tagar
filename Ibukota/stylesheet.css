@@ -641,6 +641,9 @@ body {
 }
 
 @media screen and (min-width: 992px) {
+	.p{
+		top: 35%;
+	}
 
 	.animation-area {
 		/*background:linear-gradient(to left, #6f5dd4, #505050) ;*/
