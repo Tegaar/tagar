@@ -38,29 +38,29 @@ const sr = ScrollReveal({
 
 /*SCROLL HOME*/
 sr.reveal('.home__title',{})
-sr.reveal('.button',{origin:'left', delay: 400})
-sr.reveal('.home__img',{origin:'right', delay: 400})
-sr.reveal('.home__social-icon',{origin:'bottom',interval: 400})
+sr.reveal('.button',{origin:'left', delay: 1900})/* 400 */
+sr.reveal('.home__img',{origin:'right', delay: 1900})/* 400 */
+sr.reveal('.home__social-icon',{origin:'bottom',interval: 1900})/* 400 */
 
 /*SCROLL ABOUT*/
 sr.reveal('.about__img',{})
-sr.reveal('.about__subtitle',{delay: 200})
-sr.reveal('.about__text',{delay: 400})
+sr.reveal('.about__subtitle',{delay: 200})/* 200 */
+sr.reveal('.about__text',{delay: 400})/* 400 */
 
 
 /*SCROLL SKILLS*/
 sr.reveal('.skills__subtitle',{})
-sr.reveal('.skills__text',{delay: 200})
-sr.reveal('.skills__data',{interval: 200})
-sr.reveal('.skills__img',{delay: 600})
+sr.reveal('.skills__text',{delay: 200})/* 200 */
+sr.reveal('.skills__data',{interval: 200})/* 200 */
+sr.reveal('.skills__img',{delay: 600})/* 600 */
 
 
 /*SCROLL CONTACT*/
-sr.reveal('.work__img',{interval: 200})
+sr.reveal('.work__img',{interval: 200})/* 200 */
 
 
 /*SCROLL CONTACT*/
-sr.reveal('.contact__input',{interval: 200})
+sr.reveal('.contact__input',{interval: 200})/* 200 */
 
 
 /*darkmodeee*/
