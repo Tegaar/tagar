@@ -136,7 +136,7 @@ img{
     justify-content: space-between;
     align-items: center;
     font-weight: var(--font-semi);
-    
+    border: 5px solid red;
 }
 
 @media screen and (max-width: 768px)/*(menu yg biru kanan)*/{
@@ -178,6 +178,7 @@ img{
     font-size: 1.5rem;
     cursor: pointer;
 }
+
 
 /*Active menu*/
 .active::after{
@@ -513,24 +514,19 @@ img{
         justify-items: center;
     }
     
+    .gonta-ganti{
+        position: absolute;
+        right: 8%;
+    }
+    
     
     /*modeee*/
-    .gonta-ganti{
+    /* .{
         margin-top: var(--mb-1);
         position: absolute;
         top: 40%;
         left: 22%;
-    }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1025px){
-    .gonta-ganti{
-        margin-top: var(--mb-1);
-        position: absolute;
-        top: 400%;
-        left: 2000%;
-    }
-
+    } */
 }
 
 @media screen and (min-width: 1024px){
@@ -540,13 +536,6 @@ img{
     }
     .home__img{
         right: 10%;
-    }
-    
-    .gonta-ganti{
-        margin-top: var(--mb-1);
-        position: absolute;
-        top: 40%;
-        left: 2.5%;
     }
 }
 
@@ -565,12 +554,7 @@ img{
     --footer-color: #222222;
     transition: all 500ms ease-in-out;
 }
-.gonta-ganti{
-    display: flex;
-    /*justify-content: flex-end;*/
-    align-items: center;
-    margin-bottom: 1em;
-}
+
 .switch-kotak{
     width: 4em;
     height: 2em;
